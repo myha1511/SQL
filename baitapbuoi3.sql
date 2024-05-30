@@ -52,6 +52,16 @@ select name
 from customer
 where referee_id <> 2 or referee_id is null;
 
+/* Câu 11 leetcode-big-countries. */
+select name, population, area
+from world
+where area >=3000000
+or population >=25000000;
+
+/* Câu 11 leetcode-article-views.  */
+
+
+
 
 
 
