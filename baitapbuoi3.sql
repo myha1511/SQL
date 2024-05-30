@@ -31,3 +31,17 @@ and city not like 'o%'
 and city not like 'u%'
 
 /* Câu 7: https://www.hackerrank.com/challenges/weather-observation-station-7/submissions/code/384806727.  */
+
+select name from employee
+order by name asc;
+
+/* Câu 8: https://www.hackerrank.com/challenges/weather-observation-station-7/submissions/code/384806727.  */
+select name from employee
+where salary >2000 and
+months < 10 
+order by employee_id  asc;
+
+
+
+
+
