@@ -30,16 +30,18 @@ and city not like 'i%'
 and city not like 'o%' 
 and city not like 'u%'
 
-/* Câu 7: https://www.hackerrank.com/challenges/weather-observation-station-7/submissions/code/384806727.  */
+/* Câu 7: hackerank-name-of-employees.   */
 
 select name from employee
 order by name asc;
 
-/* Câu 8: https://www.hackerrank.com/challenges/weather-observation-station-7/submissions/code/384806727.  */
+/* Câu 8: hackerank-salary-of-employees.   */
 select name from employee
 where salary >2000 and
 months < 10 
 order by employee_id  asc;
+
+/* Câu 9: leetcode-recyclable-and-low-fat-products.   */
 
 
 
