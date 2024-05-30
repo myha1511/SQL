@@ -58,7 +58,25 @@ from world
 where area >=3000000
 or population >=25000000;
 
-/* Câu 11 leetcode-article-views.  */
+/* Câu 12 leetcode-article-views.  */
+select distinct author_id as id
+from views
+where author_id = viewer_id
+order by id asc
+
+
+/* Câu 13 https://datalemur.com/questions/tesla-unfinished-parts */
+SELECT part, assembly_step FROM parts_assembly
+where finish_date is null
+
+/* Câu 14 https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=1 */
+SELECT *
+FROM lyft_drivers
+WHERE yearly_salary <= 30000 OR yearly_salary >= 70000;
+
+
+
+
 
 
 
