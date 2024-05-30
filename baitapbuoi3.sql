@@ -74,6 +74,11 @@ SELECT *
 FROM lyft_drivers
 WHERE yearly_salary <= 30000 OR yearly_salary >= 70000;
 
+/* Câu 15 datalemur-find-the-advertising-channel.*/
+select * from uber_advertising
+where year = 2019 and
+money_spent >100000
+
 
 
 
