@@ -42,6 +42,16 @@ months < 10
 order by employee_id  asc;
 
 /* Câu 9: leetcode-recyclable-and-low-fat-products.   */
+select product_id from products
+where low_fats= 'Y'
+and recyclable = 'Y';
+
+/* Câu 10: leetcode-find-customer-referee.    */
+
+select name
+from customer
+where referee_id <> 2 or referee_id is null;
+
 
 
 
