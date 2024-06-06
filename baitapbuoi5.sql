@@ -9,3 +9,9 @@ FROM STATION;
 /*ex4: datalemur-alibaba-compressed-mean.*/
 SELECT round(cast(sum(item_count*order_occurrences)/sum(order_occurrences)as decimal),1) as mean 
 FROM items_per_order
+  
+/*ex5:datalemur-matching-skills.*/
+  SELECT candidate_id FROM candidates
+where skill in ('Python','Tableau','PostgreSQL')
+group by (candidate_id)
+
