@@ -27,4 +27,12 @@ SELECT card_name , (max(issued_amount)- min(issued_amount)) as difference
 FROM monthly_cards_issued
 GROUP BY (card_name)
 ORDER BY difference DESC
+  
+/*ex8:https://datalemur.com/questions/cards-issued-difference.*/
+SELECT manufacturer,
+count(drug) as drug, abs(sum(cogs-total_sales)) as total_loss
+FROM pharmacy_sales
+where total_sales < cogs
+group by (manufacturer)
+order by  total_loss desc
 
