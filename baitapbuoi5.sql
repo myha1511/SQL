@@ -48,4 +48,14 @@ from teacher
 group by teacher_id;
 
 /*ex11: leetcode-find-followers-count..*/
+select user_id, count(follower_id) as followers_count
+from Followers
+group by user_id
+order by user_id 
+
+/*ex11: leetcode-classes-more-than-5-students..*/
+select class
+from courses
+group by class
+having count(student) >=5
 
