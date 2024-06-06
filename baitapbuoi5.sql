@@ -14,4 +14,10 @@ FROM items_per_order
   SELECT candidate_id FROM candidates
 where skill in ('Python','Tableau','PostgreSQL')
 group by (candidate_id)
-
+  
+/*ex6:datalemur-verage-post-hiatus-1..*/
+SELECT user_id, date(max(post_date))-date(min(post_date)) as days_between
+FROM posts
+where  post_date >='2021-01-01' and post_date <='2022-01-01'
+group by (user_id)
+having count (post_id) >=2
