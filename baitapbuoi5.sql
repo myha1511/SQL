@@ -36,3 +36,16 @@ where total_sales < cogs
 group by (manufacturer)
 order by  total_loss desc
 
+/*ex9:leetcode-not-boring-movies.*/
+select* from cinema
+where id%2=1 and  description <>'boring'
+order by rating desc
+
+/*ex10: leetcode-number-of-unique-subject.*/
+select teacher_id , 
+count(distinct subject_id) as cnt
+from teacher
+group by teacher_id;
+
+/*ex11: leetcode-find-followers-count..*/
+
